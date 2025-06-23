@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Primary Meta Tags -->
-    <title>Joyeria Agregar Cliente</title>
+    <title>Joyeria Agregar Producto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="Joyeria Punto De Venta -- Iniciar Sesión">
     <meta name="author" content="Themesberg">
@@ -33,22 +33,22 @@
         content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="120x120" href="../../../assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../../../assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="../../../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Sweet Alert -->
-    <link type="text/css" href="../../../vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+    <link type="text/css" href="../../vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
 
     <!-- Notyf -->
-    <link type="text/css" href="../../../vendor/notyf/notyf.min.css" rel="stylesheet">
+    <link type="text/css" href="../../vendor/notyf/notyf.min.css" rel="stylesheet">
 
     <!-- Volt CSS -->
-    <link type="text/css" href="../../../css/volt.css" rel="stylesheet">
+    <link type="text/css" href="../../css/volt.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
@@ -59,9 +59,9 @@
 <body>
 
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
-        <a class="navbar-brand me-lg-5" href="../../../index.html">
-            <img class="navbar-brand-dark" src="../../../assets/img/brand/light.svg" alt="Volt logo" /><img
-                class="navbar-brand-light" src="../../../assets/img/brand/dark.svg" alt="Volt logo" />
+        <a class="navbar-brand me-lg-5" href="../../index.html">
+            <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="Volt logo" /><img
+                class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="Volt logo" />
         </a>
         <div class="d-flex align-items-center">
             <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
@@ -87,7 +87,7 @@
                 </li>
                 <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
                 <li class="nav-item  active ">
-                    <a href="../../../view/dashboard/dashboard.html" class="nav-link">
+                    <a href="../../view/dashboard/dashboard.html" class="nav-link">
                         <span class="sidebar-icon">
                             <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -128,27 +128,66 @@
                     <div class="multi-level collapse" role="list" id="submenu-usuarios" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/usuarios/empleado/agregar-empleado.html"><i
+                                <a class="nav-link" href="../../view/usuarios/empleado/agregar-empleado.html"><i
                                         class="bi bi-person-bounding-box"></i>
                                     <span class="sidebar-text">Agregar Empleado</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/usuarios/cliente/agregar-cliente.html"><i
+                                <a class="nav-link" href="../../view/usuarios/cliente/agregar-cliente.html"><i
                                         class="bi bi-people-fill"></i>
                                     <span class="sidebar-text">Agregar Cliente</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/usuarios/empleado/consultar-empleado.html"><i
+                                <a class="nav-link" href="../../view/usuarios/empleado/consultar-empleado.html"><i
                                         class="bi bi-search"></i>
                                     <span class="sidebar-text">Buscar Empleado</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/usuarios/cliente/consultar-cliente.html"><i
+                                <a class="nav-link" href="../../view/usuarios/cliente/consultar-cliente.html"><i
                                         class="bi bi-search"></i>
                                     <span class="sidebar-text">Buscar Cliente</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
+
+                <li class="nav-item">
+                    <span class="nav-link collapsed d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-sucursal" aria-expanded="false"
+                        aria-controls="submenu-sucursal">
+                        <span>
+                            <span class="sidebar-icon">
+                                <i class="bi bi-clipboard-check-fill"></i>
+                                <!-- Solo este ícono, sin etiquetas <path> -->
+                            </span>
+                            <span class="sidebar-text">Sucursal</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse" role="list" id="submenu-sucursal" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../view/sucursal/agregar-sucursal.html">
+                                    <i class="bi bi-clipboard-plus-fill"></i>
+                                    <span class="sidebar-text">Agregar Sucursal</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../view/sucursal/consultar-sucursal.html">
+                                    <i class="bi bi-search"></i>
+                                    <span class="sidebar-text">Buscar Sucursal</span> <!-- Corregido aquí -->
                                 </a>
                             </li>
                         </ul>
@@ -180,13 +219,13 @@
                     <div class="multi-level collapse" role="list" id="submenu-productos" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/producto/agregar-producto.html">
+                                <a class="nav-link" href="../../view/producto/agregar-producto.html">
                                     <i class="bi bi-clipboard-plus-fill"></i>
                                     <span class="sidebar-text">Agregar Producto</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/producto/consultar-producto.html">
+                                <a class="nav-link" href="../../view/producto/consultar-producto.html">
                                     <i class="bi bi-search"></i>
                                     <span class="sidebar-text">Buscar Producto</span> <!-- Corregido aquí -->
                                 </a>
@@ -225,13 +264,13 @@
                     <div class="multi-level collapse" role="list" id="submenu-ventas-contado" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/venta/contado/agregar-venta-contado.html"><i
+                                <a class="nav-link" href="../../view/venta/contado/agregar-venta-contado.html"><i
                                         class="bi bi-cart-check-fill"></i>
                                     <span class="sidebar-text">Agregar Venta</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/venta/contado/buscar-venta-contado.html"><i
+                                <a class="nav-link" href="../../view/venta/contado/buscar-venta-contado.html"><i
                                         class="bi bi-search"></i>
                                     <span class="sidebar-text">Buscar Venta</span>
                                 </a>
@@ -270,13 +309,13 @@
                     <div class="multi-level collapse" role="list" id="submenu-ventas-credito" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/venta/credito/agregar-venta-credito.html"><i
+                                <a class="nav-link" href="../../view/venta/credito/agregar-venta-credito.html"><i
                                         class="bi bi-cart-check-fill"></i>
                                     <span class="sidebar-text">Agregar Venta</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/venta/credito/consultar-venta-credito.html"><i
+                                <a class="nav-link" href="../../view/venta/credito/consultar-venta-credito.html"><i
                                         class="bi bi-search"></i>
                                     <span class="sidebar-text">Buscar Venta</span>
                                 </a>
@@ -316,13 +355,13 @@
                     <div class="multi-level collapse" role="list" id="submenu-transacciones" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/transacciones/agregar-transaccion.html"><i
+                                <a class="nav-link" href="../../view/transacciones/agregar-transaccion.html"><i
                                         class="bi bi-arrow-left-right"></i>
                                     <span class="sidebar-text">Agregar transacción</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/transacciones/consultar-transacciones.html"><i
+                                <a class="nav-link" href="../../view/transacciones/consultar-transacciones.html"><i
                                         class="bi bi-search"></i>
                                     <span class="sidebar-text">Buscar transacción</span>
                                 </a>
@@ -361,13 +400,13 @@
                     <div class="multi-level collapse" role="list" id="submenu-reportes" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/reporte/generar-reporte.html"><i
+                                <a class="nav-link" href="../../view/reporte/generar-reporte.html"><i
                                         class="bi bi-filetype-pdf"></i>
                                     <span class="sidebar-text">Generar reporte</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/reporte/consultar-reporte.html"><i
+                                <a class="nav-link" href="../../view/reporte/consultar-reporte.html"><i
                                         class="bi bi-search"></i>
                                     <span class="sidebar-text">Consultar reporte</span>
                                 </a>
@@ -406,13 +445,13 @@
                     <div class="multi-level collapse" role="list" id="submenu-gastos" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/gastos/agregar-gasto.html"><i
+                                <a class="nav-link" href="../../view/gastos/agregar-gasto.html"><i
                                         class="bi bi-coin"></i>
                                     <span class="sidebar-text">Agregar gasto</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../../../view/gastos/consultar-gasto.html"><i
+                                <a class="nav-link" href="../../view/gastos/consultar-gasto.html"><i
                                         class="bi bi-search"></i>
                                     <span class="sidebar-text">Consultar gasto</span>
                                 </a>
@@ -437,7 +476,7 @@
                         <div class="w-100 d-flex justify-content-center my-2">
                             <span class="badge bg-primary fs-4 px-4 py-3 shadow-sm rounded-pill text-wrap text-center">
                                 <i class="bi bi-speedometer2 me-3"></i>
-                                Modulo de Consultar Ventas Contado
+                                Modulo de Sucursales
                             </span>
                         </div>
                         <!-- / nombre el modulo -->
@@ -575,229 +614,128 @@
         </nav>
 
         <br>
-        <!-- Título -->
-        <h2 class="h2 text-center text-white"><i class="bi bi-receipt"></i> Consultar Ventas Contado</h2>
-        <br>
-        <p class="mb-2 text-white">Selecciona un filtro para consultar</p>
-        <br>
+        <!-- Formulario para registrar una sucursal -->
+        <div class="card card-body border-0 shadow mb-4">
+            <h2 class="h5 mb-4"><i class="bi bi-shop-window"></i> Registrar Nueva Sucursal</h2>
+            <form id="formSucursal" autocomplete="off">
 
-        <!-- Filtros -->
-        <div class="table-settings mb-4">
-            <div class="row g-2 align-items-center">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="input-group">
-                        <span class="input-group-text"><i class="bi bi-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Buscar">
+                <div class="row">
+                    <!-- Nombre de la sucursal -->
+                    <div class="col-md-6 mb-3">
+                        <label for="nombreSucursal" class="form-label">Nombre de la Sucursal</label>
+                        <input type="text" class="form-control" id="nombreSucursal" placeholder="Ej. Sucursal Centro"
+                            required>
+                    </div>
+
+                    <!-- Código de sucursal -->
+                    <div class="col-md-6 mb-3">
+                        <label for="codigoSucursal" class="form-label">Código de Sucursal</label>
+                        <input type="text" class="form-control" id="codigoSucursal" placeholder="Ej. SC001" required>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4">
-                    <select class="form-select" id="filtroVentas">
-                        <option value="">Seleccion un filtro</option>
-                        <option value="fecha">Fecha</option>
-                        <option value="sucursal">Sucursal</option>
-                        <option value="vendedor">Vendedor</option>
-                        <option value="metodo">Método de pago</option>
-                        <option value="vendedor">Vendedor</option>
-                    </select>
+
+                <!-- Dirección dividida -->
+                <h6 class="text-muted mt-3">Dirección</h6>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="calle" class="form-label">Calle</label>
+                        <input type="text" class="form-control" id="calle" placeholder="Ej. Av. Hidalgo" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="numero" class="form-label">Número</label>
+                        <input type="text" class="form-control" id="numero" placeholder="Ej. 123" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="colonia" class="form-label">Colonia</label>
+                        <input type="text" class="form-control" id="colonia" placeholder="Ej. Centro" required>
+                    </div>
                 </div>
-                <div class="col-12 col-md-2 col-lg-4 text-end">
-                    <div class="dropdown">
-                        <button class="btn btn-link text-white dropdown-toggle dropdown-toggle-split m-0 p-1"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="bi bi-gear-fill" style="color: white;"></i>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="codigoPostal" class="form-label">Código Postal</label>
+                        <input type="text" class="form-control" id="codigoPostal" placeholder="Ej. 73800" required>
+                    </div>
+                    <div class="col-sm-3 mb-3">
+                        <label for="estado">Estado</label>
+                        <select class="form-select w-100 mb-0" id="estado" name="estado"
+                            aria-label="State select example">
+                            <option selected>Selecciona un estado</option>
+                            <option value="AG">Aguascalientes</option>
+                            <option value="BC">Baja California</option>
+                            <option value="BS">Baja California Sur</option>
+                            <option value="CM">Campeche</option>
+                            <option value="CS">Chiapas</option>
+                            <option value="CH">Chihuahua</option>
+                            <option value="CO">Coahuila</option>
+                            <option value="CL">Colima</option>
+                            <option value="DF">Ciudad de México</option>
+                            <option value="DG">Durango</option>
+                            <option value="GT">Guanajuato</option>
+                            <option value="GR">Guerrero</option>
+                            <option value="HG">Hidalgo</option>
+                            <option value="JA">Jalisco</option>
+                            <option value="EM">Estado de México</option>
+                            <option value="MI">Michoacán</option>
+                            <option value="MO">Morelos</option>
+                            <option value="NA">Nayarit</option>
+                            <option value="NL">Nuevo León</option>
+                            <option value="OA">Oaxaca</option>
+                            <option value="PU">Puebla</option>
+                            <option value="QT">Querétaro</option>
+                            <option value="QR">Quintana Roo</option>
+                            <option value="SL">San Luis Potosí</option>
+                            <option value="SI">Sinaloa</option>
+                            <option value="SO">Sonora</option>
+                            <option value="TB">Tabasco</option>
+                            <option value="TM">Tamaulipas</option>
+                            <option value="TL">Tlaxcala</option>
+                            <option value="VE">Veracruz</option>
+                            <option value="YN">Yucatán</option>
+                            <option value="ZA">Zacatecas</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="estadoSucursal" class="form-label">Estado</label>
+                        <input type="text" class="form-control" id="estadoSucursal" placeholder="Ej. Puebla" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Teléfono -->
+                    <div class="col-md-6 mb-3">
+                        <label for="telefonoSucursal" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefonoSucursal" placeholder="Ej. 2311234567">
+                    </div>
+
+                    <!-- Encargado (select) -->
+                    <div class="col-md-6 mb-3">
+                        <label for="encargadoSucursal" class="form-label">Encargado de Sucursal</label>
+                        <select class="form-select" id="encargadoSucursal" required>
+                            <option value="">Selecciona un empleado</option>
+                            <option value="1">Juan Pérez</option>
+                            <option value="2">María López</option>
+                            <option value="3">Carlos Díaz</option>
+                            <!-- Puedes llenar este select dinámicamente desde tu backend -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Botones -->
+                <div class="row mt-3">
+                    <div class="col-md-6 d-grid">
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-save2-fill"></i> Registrar Sucursal
                         </button>
-                        <div class="dropdown-menu dropdown-menu-xs dropdown-menu-end pb-0">
-                            <span class="small ps-3 fw-bold text-dark">Paginación</span>
-                            <a class="dropdown-item fw-bold" href="#">10</a>
-                            <a class="dropdown-item fw-bold" href="#">20</a>
-                            <a class="dropdown-item fw-bold rounded-bottom" href="#">30</a>
-                        </div>
+                    </div>
+                    <div class="col-md-6 d-grid">
+                        <button type="reset" class="btn btn-danger" id="btnCancelar">
+                            <i class="bi bi-x-circle"></i> Cancelar
+                        </button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
-
-        <!-- Tabla de ventas -->
-        <div class="card card-body border-0 shadow table-wrapper table-responsive">
-            <table class="table table-hover text-center align-middle">
-                <thead class="table-light">
-                    <tr>
-                        <th>ID Venta</th>
-                        <th>Fecha y Hora</th>
-                        <th>Vendedor</th>
-                        <th>Sucursal</th>
-                        <th>Método Pago</th>
-                        <th>Total</th>
-                        <th>Pagado</th>
-                        <th>Cambio</th>
-                        <th>Productos</th>
-                        <th>Vendedor</th>
-                        <th>Acción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Venta 1 -->
-                    <tr>
-                        <td><span class="fw-bold">#000124</span></td>
-                        <td>2025-06-23 14:32</td>
-                        <td>Juan Pérez Gomez</td>
-                        <td>La Perla</td>
-                        <td>Efectivo</td>
-                        <td>$3,200.00</td>
-                        <td>$3,500.00</td>
-                        <td>$300.00</td>
-                        <td>
-                            <button type="button" class="btn btn-link text-decoration-none text-dark p-0"
-                                data-bs-toggle="modal" data-bs-target="#productosModal00124">
-                                <span class="text-truncate d-inline-block" style="max-width: 150px;">Ver
-                                    productos</span>
-                                <i class="bi bi-eye ms-1"></i>
-                            </button>
-
-                            <!-- Modal productos venta 1 -->
-                            <div class="modal fade" id="productosModal00124" tabindex="-1"
-                                aria-labelledby="productosModal00124Label" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="productosModal00124Label">Productos comprados
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Cerrar"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <ul class="list-group">
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        Anillo Oro <span
-                                                            class="text-muted small ms-2">($2,000.00)</span>
-                                                    </div>
-                                                    <span class="badge bg-primary rounded-pill">x1</span>
-                                                </li>
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        Cadena Plata <span
-                                                            class="text-muted small ms-2">($600.00)</span>
-                                                    </div>
-                                                    <span class="badge bg-primary rounded-pill">x2</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Javier Perez Juarez</td>
-                        <td>
-                            <div class="btn-group">
-                                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown">
-                                    Opciones
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-eye me-2"></i>Ver
-                                            Detalles</a></li>
-                                    <li><a class="dropdown-item text-danger" href="#"><i
-                                                class="fas fa-trash-alt me-2"></i>Eliminar</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <!-- Venta 2 -->
-                    <tr>
-                        <td><span class="fw-bold">#000125</span></td>
-                        <td>2025-06-23 15:18</td>
-                        <td>María López Rodriguez</td>
-                        <td>Centro Teziutlán</td>
-                        <td>Tarjeta</td>
-                        <td>$1,750.00</td>
-                        <td>$1,750.00</td>
-                        <td>$0.00</td>
-                        <td>
-                            <button type="button" class="btn btn-link text-decoration-none text-dark p-0"
-                                data-bs-toggle="modal" data-bs-target="#productosModal00125">
-                                <span class="text-truncate d-inline-block" style="max-width: 150px;">Ver
-                                    productos</span>
-                                <i class="bi bi-eye ms-1"></i>
-                            </button>
-
-                            <!-- Modal productos venta 2 -->
-                            <div class="modal fade" id="productosModal00125" tabindex="-1"
-                                aria-labelledby="productosModal00125Label" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="productosModal00125Label">Productos comprados
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Cerrar"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <ul class="list-group">
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        Pulsera Acero <span
-                                                            class="text-muted small ms-2">($1,750.00)</span>
-                                                    </div>
-                                                    <span class="badge bg-primary rounded-pill">x1</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Javier Perez Juarez</td>
-                        <td>
-                            <div class="btn-group">
-                                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown">
-                                    Opciones
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-eye me-2"></i>Ver
-                                            Detalles</a></li>
-                                    <li><a class="dropdown-item text-danger" href="#"><i
-                                                class="fas fa-trash-alt me-2"></i>Eliminar</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Paginación -->
-        <div
-            class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
-            <nav aria-label="Page navigation">
-                <ul class="pagination mb-0">
-                    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
-                </ul>
-            </nav>
-            <div class="fw-normal small mt-4 mt-lg-0">Mostrando <b>2</b> de <b>25</b> ventas</div>
-        </div>
-        </div>
-
-
-
-
 
 
 
@@ -824,12 +762,12 @@
             </div>
         </div>
 
+        <!-- Footer -->
         <footer class="bg-white rounded shadow p-5 mb-4 mt-4">
             <div class="row">
                 <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
                     <p class="mb-0">© 2025 - <span class="current-year"></span>
-                        <a class="text-primary fw-normal" href="https://themesberg.com" target="_blank">
-                        </a>
+                        <a class="text-primary fw-normal" href="https://themesberg.com" target="_blank"></a>
                     </p>
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-end">
@@ -845,53 +783,53 @@
             </div>
         </footer>
 
+
     </main>
 
     <!-- Core -->
-    <script src="../../../vendor/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="../../../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../vendor/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Vendor JS -->
-    <script src="../../../vendor/onscreen/dist/on-screen.umd.min.js"></script>
+    <script src="../../vendor/onscreen/dist/on-screen.umd.min.js"></script>
 
     <!-- Slider -->
-    <script src="../../../vendor/nouislider/distribute/nouislider.min.js"></script>
+    <script src="../../vendor/nouislider/distribute/nouislider.min.js"></script>
 
     <!-- Smooth scroll -->
-    <script src="../../../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
     <!-- Charts -->
-    <script src="../../../vendor/chartist/dist/chartist.min.js"></script>
-    <script src="../../../vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../vendor/chartist/dist/chartist.min.js"></script>
+    <script src="../../vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
 
     <!-- Datepicker -->
-    <script src="../../../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="../../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
 
     <!-- Sweet Alerts 2 -->
-    <script src="../../../vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="../../vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
     <!-- Moment JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 
     <!-- Vanilla JS Datepicker -->
-    <script src="../../../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="../../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
 
     <!-- Notyf -->
-    <script src="../../../vendor/notyf/notyf.min.js"></script>
+    <script src="../../vendor/notyf/notyf.min.js"></script>
 
     <!-- Simplebar -->
-    <script src="../../../vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../../vendor/simplebar/dist/simplebar.min.js"></script>
 
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <!-- Volt JS -->
-    <script src="../../../assets/js/volt.js"></script>
+    <script src="../../assets/js/volt.js"></script>
 
     <script>
         document.querySelector('.current-year').textContent = new Date().getFullYear();
     </script>
-
 
 
 </body>
